@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import 'bootstrap/dist/js/bootstrap.min.js';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,9 +16,159 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <h1>Hello world</h1>
+      <div id="demo" className="carousel slide" data-bs-ride="carousel">
+
+        {/* Cada uno de los botones representa cada una de 
+        las imagenes como si fuera en una lista empieza en 0 */}
+        <div className="carousel-indicators"> {/*"carousel-indicators" son los botones que se ven en la parrte inferior*/} 
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+        </div>
+
+        <div className="carousel-inner"> {/* "carousel-inner" ingresa las diapositivas */}
+          <div className="carousel-item active">
+            <header className={`${styles.imagen1}`}>
+              <div className={`${styles.contenedor}`}>
+                <div className={`${styles.barra}`}>
+                  <a className={`${styles.logo}`} href='#'> 
+                    <h1 className='h1'>Titulo</h1>
+                  </a> 
+                  <nav className={`${styles.navegacion}`}>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                  </nav>
+                </div> {/* .barra */}
+              </div> {/* .contenedor */}
+              <div className={`${styles.header__texto}`}>
+                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+              </div>
+            </header>
+          </div> {/* Primer diapositiva .carousel-item .active */}
+
+          <div className="carousel-item">
+            <header className={`${styles.imagen2}`}>
+              <div className={`${styles.contenedor}`}>
+                <div className={`${styles.barra}`}>
+                  <a className={`${styles.logo}`} href='#'> 
+                    <h1 className='h1'>Titulo</h1>
+                  </a> 
+                  <nav className={`${styles.navegacion}`}>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                  </nav>
+                </div> {/* .barra */}
+              </div> {/* .contenedor */}
+              <div className={`${styles.header__texto}`}>
+                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+              </div>
+            </header>
+          </div> {/* Segunda diapositiva .carousel-item */}
+
+          <div className="carousel-item">
+            <header className={`${styles.imagen3}`}>
+              <div className={`${styles.contenedor}`}>
+                <div className={`${styles.barra}`}>
+                  <a className={`${styles.logo}`} href='#'> 
+                    <h1 className='h1'>Titulo</h1>
+                  </a> 
+                  <nav className={`${styles.navegacion}`}>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                  </nav>
+                </div> {/* .barra */}
+              </div> {/* .contenedor */}
+              <div className={`${styles.header__texto}`}>
+                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+              </div>
+            </header>
+          </div> {/* Tercer diapositiva .carousel-item */}
+
+          <div className="carousel-item">
+            <header className={`${styles.imagen4}`}>
+              <div className={`${styles.contenedor}`}>
+                <div className={`${styles.barra}`}>
+                  <a className={`${styles.logo}`} href='#'> 
+                    <h1 className='h1'>Titulo</h1>
+                  </a> 
+                  <nav className={`${styles.navegacion}`}>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                  </nav>
+                </div> {/* .barra */}
+              </div> {/* .contenedor */}
+              <div className={`${styles.header__texto}`}>
+                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+              </div>
+            </header>
+          </div> {/* Cuarta diapositiva .carousel-item */}
+
+          <div className="carousel-item">
+            <header className={`${styles.imagen5}`}>
+              <div className={`${styles.contenedor}`}>
+                <div className={`${styles.barra}`}>
+                  <a className={`${styles.logo}`} href='#'> 
+                    <h1 className='h1'>Titulo</h1>
+                  </a> 
+                  <nav className={`${styles.navegacion}`}>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                  </nav>
+                </div> {/* .barra */}
+              </div> {/* .contenedor */}
+              <div className={`${styles.header__texto}`}>
+                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+              </div>
+            </header>
+          </div> {/* Quinta diapositiva .carousel-item .active */}
+
+          <div className="carousel-item">
+            <header className={`${styles.imagen6}`}>
+              <div className={`${styles.contenedor}`}>
+                <div className={`${styles.barra}`}>
+                  <a className={`${styles.logo}`} href='#'> 
+                    <h1 className='h1'>Titulo</h1>
+                  </a> 
+                  <nav className={`${styles.navegacion}`}>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                  </nav>
+                </div> {/* .barra */}
+              </div> {/* .contenedor */}
+              <div className={`${styles.header__texto}`}>
+                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+              </div>
+            </header>
+          </div> {/* Sexta diapositiva .carousel-item .active */}
+        </div> {/* .carousel-inner */}
+        <button className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon"></span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span className="carousel-control-next-icon"></span>
+        </button>
+      </div> {/* /Aqui se termina el carrusel .carousel y .slide/ */}
+      
+      <main >
+        <h1 className='h1'>Plantas</h1>
       </main>
+
+      
     </>
   )
 }
