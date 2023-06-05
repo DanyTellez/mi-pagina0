@@ -2,11 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import 'bootstrap/dist/js/bootstrap.min.js';
-
+// import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 const inter = Inter({ subsets: ['latin'] })
+if (typeof window !== 'undefined') {
+  require('bootstrap/dist/js/bootstrap.min.js');
+}
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <div id="demo" className="carousel slide" data-bs-ride="carousel">
 
         {/* Cada uno de los botones representa cada una de 
@@ -172,4 +175,7 @@ export default function Home() {
       
     </>
   )
+}
+if (typeof document !== 'undefined') {
+  Home()
 }
