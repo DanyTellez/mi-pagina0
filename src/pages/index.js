@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-// import 'bootstrap/dist/js/bootstrap.min.js';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -38,8 +38,8 @@ export default function Home() {
             <header className={`${styles.imagen1}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='#'> 
-                    <h1 className='h1'>Titulo</h1>
+                  <a className={`${styles.logo}`} href='/'> 
+                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
                     <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
@@ -49,8 +49,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Primer diapositiva .carousel-item .active */}
@@ -59,8 +59,8 @@ export default function Home() {
             <header className={`${styles.imagen2}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='#'> 
-                    <h1 className='h1'>Titulo</h1>
+                  <a className={`${styles.logo}`} href='/'> 
+                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
                     <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
@@ -70,8 +70,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Segunda diapositiva .carousel-item */}
@@ -80,8 +80,8 @@ export default function Home() {
             <header className={`${styles.imagen3}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='#'> 
-                    <h1 className='h1'>Titulo</h1>
+                  <a className={`${styles.logo}`} href='/'> 
+                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
                     <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
@@ -91,8 +91,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Tercer diapositiva .carousel-item */}
@@ -101,8 +101,8 @@ export default function Home() {
             <header className={`${styles.imagen4}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='#'> 
-                    <h1 className='h1'>Titulo</h1>
+                  <a className={`${styles.logo}`} href='/'> 
+                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
                     <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
@@ -112,8 +112,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Cuarta diapositiva .carousel-item */}
@@ -122,8 +122,8 @@ export default function Home() {
             <header className={`${styles.imagen5}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='#'> 
-                    <h1 className='h1'>Titulo</h1>
+                  <a className={`${styles.logo}`} href='/'> 
+                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
                     <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
@@ -133,8 +133,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Quinta diapositiva .carousel-item .active */}
@@ -143,8 +143,8 @@ export default function Home() {
             <header className={`${styles.imagen6}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='#'> 
-                    <h1 className='h1'>Titulo</h1>
+                  <a className={`${styles.logo}`} href='/'> 
+                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
                     <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
@@ -154,8 +154,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.no__margin} h2`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.no__margin}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
+                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Sexta diapositiva .carousel-item .active */}
@@ -167,7 +167,9 @@ export default function Home() {
             <span className="carousel-control-next-icon"></span>
         </button>
       </div> {/* /Aqui se termina el carrusel .carousel y .slide/ */}
-      
+      <div className={`${styles.contenedor} ${styles.contenido__principal}`}>
+
+      </div>
       <main >
         <h1 className='h1'>Plantas</h1>
       </main>

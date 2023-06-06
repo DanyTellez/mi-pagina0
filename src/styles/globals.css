@@ -5,14 +5,13 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-body {
-  
-  font-family: var(--fuenteParrafos);
+a {
+  margin-top: 2.5rem;
+  text-decoration: none;
+}
+p {
   font-size: 1.6rem;
   line-height: 2;
-}
-img {
-  max-width: 100% ;
 }
 
 
