@@ -1,51 +1,30 @@
-.imagen1 {
-    background-image: url(/img/LenguadeSuegra.png);
+.imagenes {
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
-
+.imagen1 {
+    background-image: url(/img/LenguadeSuegra.png);
+}
 .imagen2 {
     background-image: url(/img/CoralBells.png);
-    height: 60rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 .imagen3 {
     background-image: url(/img/HiedradelDiablo.png);
-    height: 60rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 .imagen4 {
     background-image: url(/img/PalmadeMadagascar.png);
-    height: 60rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 .imagen5 {
     background-image: url(/img/PlantadeHierro.png);
-    height: 60rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 .imagen6 {
     background-image: url(/img/VerdeparaSiempre.png);
-    height: 60rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
-
 .centrar__texto {
     text-align: center;
 }
-
 .logo {
     color: white;
     margin-right: 7rem;
@@ -54,20 +33,15 @@
 .logo__nombre {
     font-weight: 400;
 }
-
-
-
 .contenedor {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
 } /* Enlaces de contacto inicio nosotros y productos */
-
 .h1, .h2, .h3, .h4 {
     line-height: 1.2;
     font-weight: bold;
 }
-
 .h1 {
     margin-top: 2.5rem;
     font-size: 4.8rem;
@@ -83,16 +57,15 @@
     font-size: 2.8rem;
     margin-top: 1rem;
 } 
-
+@media (min-width: 768px) {
+    .header__texto {
+        margin-top: 10rem;  
+    }
+}   
 .header__texto {
     text-align: center;
     color: white;
     padding-top: 4rem;
-}
-@media (min-width: 768px) {
-    .header__texto {
-        margin-top: 10rem;
-    }
 }
 @media (min-width: 768px) {
     .barra {
@@ -102,23 +75,20 @@
     }
 }
 .navegacion__enlace {
-    
     display: block;
     text-align: center;
     font-size: 1.8rem;
     color: white;
     
 }
-
 @media (min-width: 768px) {
     .navegacion {
         display: flex;
         align-items: center;
         gap: 2rem;
-        /*Separación de las letras de la navegacion*/
+        
     }
 }
-
 @media (min-width: 768px) {
     .contenido__principal {
         display: grid;
@@ -127,6 +97,8 @@
         /*Separación columnas*/
     }
 }
+
+
 
 
 

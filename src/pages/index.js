@@ -25,17 +25,17 @@ export default function Home() {
         {/* Cada uno de los botones representa cada una de 
         las imagenes como si fuera en una lista empieza en 0 */}
         <div className="carousel-indicators"> {/*"carousel-indicators" son los botones que se ven en la parrte inferior*/} 
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className='active'></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
         </div>
-
+        
         <div className="carousel-inner"> {/* "carousel-inner" ingresa las diapositivas */}
           <div className="carousel-item active">
-            <header className={`${styles.imagen1}`}>
+            <header className={`${styles.imagenes} ${styles.imagen1}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
                   <a className={`${styles.logo}`} href='/'> 
@@ -56,7 +56,7 @@ export default function Home() {
           </div> {/* Primer diapositiva .carousel-item .active */}
 
           <div className="carousel-item">
-            <header className={`${styles.imagen2}`}>
+            <header className={`${styles.imagenes} ${styles.imagen2}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
                   <a className={`${styles.logo}`} href='/'> 
@@ -77,7 +77,7 @@ export default function Home() {
           </div> {/* Segunda diapositiva .carousel-item */}
 
           <div className="carousel-item">
-            <header className={`${styles.imagen3}`}>
+            <header className={`${styles.imagenes} ${styles.imagen3}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
                   <a className={`${styles.logo}`} href='/'> 
@@ -98,7 +98,7 @@ export default function Home() {
           </div> {/* Tercer diapositiva .carousel-item */}
 
           <div className="carousel-item">
-            <header className={`${styles.imagen4}`}>
+            <header className={`${styles.imagenes} ${styles.imagen4}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
                   <a className={`${styles.logo}`} href='/'> 
@@ -119,7 +119,7 @@ export default function Home() {
           </div> {/* Cuarta diapositiva .carousel-item */}
 
           <div className="carousel-item">
-            <header className={`${styles.imagen5}`}>
+            <header className={`${styles.imagenes} ${styles.imagen5}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
                   <a className={`${styles.logo}`} href='/'> 
@@ -140,7 +140,7 @@ export default function Home() {
           </div> {/* Quinta diapositiva .carousel-item .active */}
 
           <div className="carousel-item">
-            <header className={`${styles.imagen6}`}>
+            <header className={`${styles.imagenes} ${styles.imagen6}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
                   <a className={`${styles.logo}`} href='/'> 
