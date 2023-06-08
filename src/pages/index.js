@@ -10,6 +10,7 @@ if (typeof window !== 'undefined') {
   require('bootstrap/dist/js/bootstrap.min.js');
 }
 
+
 export default function Home() {
   return (
     <>
@@ -20,11 +21,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div id="demo" className="carousel slide" data-bs-ride="carousel">
+      <div id="demo" className={`${styles.body} carousel slide`} data-bs-ride="carousel">
 
         {/* Cada uno de los botones representa cada una de 
         las imagenes como si fuera en una lista empieza en 0 */}
-        <div className="carousel-indicators"> {/*"carousel-indicators" son los botones que se ven en la parrte inferior*/} 
+
+          
+
+          {/*"carousel-indicators" son los botones que se ven en la parrte inferior*/} 
+        <div className={`${styles['carousel-indicators']} carousel-indicators`} > 
           <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className='active'></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
@@ -38,19 +43,19 @@ export default function Home() {
             <header className={`${styles.imagenes} ${styles.imagen1}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='/'> 
+                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
                     <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
                   </nav>
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                  <h2 className={`${styles.h2}`}>Qjwejqwejjqwejqwjejqwejqweqwlk</h2>
+                  <p className={`${styles.p}`}>Amweqwejqkwekqwejqjwejqwkelqwek</p>
               </div>
             </header>
           </div> {/* Primer diapositiva .carousel-item .active */}
@@ -59,19 +64,19 @@ export default function Home() {
             <header className={`${styles.imagenes} ${styles.imagen2}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='/'> 
+                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
                     <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
                   </nav>
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
                 <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <p className={`${styles.p}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Segunda diapositiva .carousel-item */}
@@ -80,19 +85,19 @@ export default function Home() {
             <header className={`${styles.imagenes} ${styles.imagen3}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='/'> 
+                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
                     <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
                   </nav>
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
                 <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <p className={`${styles.p}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Tercer diapositiva .carousel-item */}
@@ -101,19 +106,19 @@ export default function Home() {
             <header className={`${styles.imagenes} ${styles.imagen4}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='/'> 
+                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
                     <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
                   </nav>
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
                 <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <p className={`${styles.p}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Cuarta diapositiva .carousel-item */}
@@ -134,7 +139,7 @@ export default function Home() {
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
                 <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <p className={`${styles.p}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Quinta diapositiva .carousel-item .active */}
@@ -143,19 +148,19 @@ export default function Home() {
             <header className={`${styles.imagenes} ${styles.imagen6}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='/'> 
+                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
                     <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
+                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
                   </nav>
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
                 <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                <p className={`${styles.p}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
               </div>
             </header>
           </div> {/* Sexta diapositiva .carousel-item .active */}
@@ -170,10 +175,23 @@ export default function Home() {
       <div className={`${styles.contenedor} ${styles.contenido__principal}`}>
 
       </div>
-      <main >
-        <h1 className='h1'>Plantas</h1>
-      </main>
 
+      <footer className={`${styles.footer}`}>
+        <div className={`${styles.contenedor}`}>
+          <div className={`${styles.barra2}`}>
+              <a className={`${styles.logo} ${styles.a}`}  href='/'>
+                  <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
+              </a>
+              <nav className={`${styles.navegacion}`}>
+                  <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
+                  <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
+                  <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a> 
+              </nav>
+          </div>
+        </div>
+      </footer>
+     
+      
       
     </>
   )

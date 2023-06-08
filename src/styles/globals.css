@@ -5,18 +5,13 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-a {
-  margin-top: 2.5rem;
-  text-decoration: none;
-}
+
 p {
-  font-size: 1.6rem;
-  line-height: 2;
+  max-width: 100%;
 }
-.carousel-control-next, 
-.carousel-control-prev {
-background-color: yellow;
-}
+
+
+
 
 
 

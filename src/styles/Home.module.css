@@ -1,8 +1,14 @@
+.body {
+    font-size: 1.6rem;
+    line-height: 2;
+}
 .imagenes {
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    
+      
 }
 .imagen1 {
     background-image: url(/img/LenguadeSuegra.png);
@@ -57,21 +63,26 @@
     font-size: 2.8rem;
     margin-top: 1rem;
 } 
-@media (min-width: 768px) {
-    .header__texto {
-        margin-top: 10rem;  
-    }
-}   
+
 .header__texto {
     text-align: center;
     color: white;
     padding-top: 4rem;
 }
 @media (min-width: 768px) {
+    .header__texto {
+        margin-top: 10rem;
+    }
+}
+@media (min-width: 768px) {
     .barra {
         display: flex;
-        justify-content: center; /* Alineación horizontal centrada */
-        align-items: flex-start; /* Alineación vertical superior */ 
+        justify-content: space-around; /* Alineación horizontal centrada */
+         /* Alineación vertical superior */ 
+    }
+    .barra2 {
+        display: flex;
+        justify-content: space-between;
     }
 }
 .navegacion__enlace {
@@ -97,6 +108,39 @@
         /*Separación columnas*/
     }
 }
+/* Propiedades Boostrap */
+.carousel-indicators [data-bs-target]{
+background-color: rgb(70, 243, 7);
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: rgb(7, 82, 7);
+    padding-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+/* .body {
+    font-size: 1.6rem;
+    line-height: 2;
+  } */
+
+  .a {
+    text-decoration: none;
+    margin-top: 2.5rem;
+  }
+
+  @media (min-width: 768px) {
+    @media (max-width: 768px) {
+        .p .h2 {
+          font-size: 16px;
+          padding: 10px;
+        }
+      }
+  }
+  
 
 
 
