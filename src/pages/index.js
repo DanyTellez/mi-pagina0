@@ -25,10 +25,7 @@ export default function Home() {
 
         {/* Cada uno de los botones representa cada una de 
         las imagenes como si fuera en una lista empieza en 0 */}
-
-          
-
-          {/*"carousel-indicators" son los botones que se ven en la parrte inferior*/} 
+        {/*"carousel-indicators" son los botones que se ven en la parrte inferior*/} 
         <div className={`${styles['carousel-indicators']} carousel-indicators`} > 
           <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className='active'></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -54,8 +51,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`}>Qjwejqwejjqwejqwjejqwejqweqwlk</h2>
-                  <p className={`${styles.p}`}>Amweqwejqkwekqwejqjwejqwkelqwek</p>
+                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
+                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
               </div>
             </header>
           </div> {/* Primer diapositiva .carousel-item .active */}
@@ -75,8 +72,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.p}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
+                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
               </div>
             </header>
           </div> {/* Segunda diapositiva .carousel-item */}
@@ -96,8 +93,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.p}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
+                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
               </div>
             </header>
           </div> {/* Tercer diapositiva .carousel-item */}
@@ -117,8 +114,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.p}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
+                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
               </div>
             </header>
           </div> {/* Cuarta diapositiva .carousel-item */}
@@ -127,7 +124,7 @@ export default function Home() {
             <header className={`${styles.imagenes} ${styles.imagen5}`}>
               <div className={`${styles.contenedor}`}>
                 <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo}`} href='/'> 
+                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
                     <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
                   </a> 
                   <nav className={`${styles.navegacion}`}>
@@ -138,8 +135,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.p}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
+                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
               </div>
             </header>
           </div> {/* Quinta diapositiva .carousel-item .active */}
@@ -159,8 +156,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                <h2 className={`${styles.h2}`}>MN123H12J31J2KL3NHKJ12</h2>
-                <p className={`${styles.p}`}> j12jk3jk1h23uj123hg12h3kj123hjk123hn1jk23h12123jh</p>
+                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
+                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
               </div>
             </header>
           </div> {/* Sexta diapositiva .carousel-item .active */}
