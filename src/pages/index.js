@@ -51,8 +51,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
-                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
+                  <h2 className={`${styles.h2}`}>Lengua de Suegra</h2>
+                  <p className={`${styles.p}`}>Lengua de Suegra</p>
               </div>
             </header>
           </div> {/* Primer diapositiva .carousel-item .active */}
@@ -72,8 +72,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
-                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
+                  <h2 className={`${styles.h2}`}>Coral Bells</h2>
+                  <p className={`${styles.p}`}>Coral Bells</p>
               </div>
             </header>
           </div> {/* Segunda diapositiva .carousel-item */}
@@ -93,8 +93,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
-                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
+                  <h2 className={`${styles.h2}`}>Hiedra del Diablo</h2>
+                  <p className={`${styles.p}`}>Hiedra del Diablo</p>
               </div>
             </header>
           </div> {/* Tercer diapositiva .carousel-item */}
@@ -114,8 +114,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
-                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
+                  <h2 className={`${styles.h2}`}>Palma de Madagscar</h2>
+                  <p className={`${styles.p}`}>Palma de Madagascar</p>
               </div>
             </header>
           </div> {/* Cuarta diapositiva .carousel-item */}
@@ -135,8 +135,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
-                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
+                  <h2 className={`${styles.h2}`}>Planta de Hierro</h2>
+                  <p className={`${styles.p}`}>Planta de Hierro</p>
               </div>
             </header>
           </div> {/* Quinta diapositiva .carousel-item .active */}
@@ -156,8 +156,8 @@ export default function Home() {
                 </div> {/* .barra */}
               </div> {/* .contenedor */}
               <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`} >Blog de café con consejos y cursos</h2>
-                  <p className={`${styles.p}`} >Aprende de los expertos con las mejores recetas y consejos</p>
+                  <h2 className={`${styles.h2}`}>Verde para Siempre</h2>
+                  <p className={`${styles.p}`}>Verde para Siempre</p>
               </div>
             </header>
           </div> {/* Sexta diapositiva .carousel-item .active */}
@@ -169,8 +169,27 @@ export default function Home() {
             <span className="carousel-control-next-icon"></span>
         </button>
       </div> {/* /Aqui se termina el carrusel .carousel y .slide/ */}
-      <div className={`${styles.contenedor} ${styles.contenido__principal}`}>
 
+      <div className={`${styles.contenedor} ${styles.contenido__principal} `}>
+        
+          <article className={`${styles.entrada}`}>
+              <div className={`${styles.margen}`}>
+                <img className={`${styles.imagen}`} src="/img/ImagenX.jpg" alt='Imagenx' />
+              </div>
+          </article>
+
+          <article className={`${styles.entrada}`}>
+              <div className={`${styles.margen}`}>
+                <img className={`${styles.imagen}`} src="/img/ImagenX.jpg" alt='Imagenx'/>
+              </div>
+          </article>
+
+          <article className={`${styles.entrada} ${styles.grid3}`}>
+              <div className={`${styles.margen} `} >
+                <img className={`${styles.imagen}`} src="/img/ImagenX.jpg" alt='Imagenx'/>
+              </div>
+          </article>
+       
       </div>
 
       <footer className={`${styles.footer}`}>
