@@ -5,9 +5,18 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+.entrada__contenido p {
+  text-align: justify;
+  margin-top: 1.5rem;
+}
 p {
   max-width: 100%;
+  
+  font-size: 2rem;
+}
+.entrada__contenido a {
+  margin-top: 2rem;
+  text-decoration: none;
 }
 
 

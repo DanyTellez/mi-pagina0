@@ -1,15 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-
-
-
-const inter = Inter({ subsets: ['latin'] })
-if (typeof window !== 'undefined') {
-  require('bootstrap/dist/js/bootstrap.min.js');
-}
-
+import Carrusel from './carrusel'
 
 export default function Home() {
   return (
@@ -21,172 +13,50 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div id="demo" className={`${styles.body} carousel slide`} data-bs-ride="carousel">
-
-        {/* Cada uno de los botones representa cada una de 
-        las imagenes como si fuera en una lista empieza en 0 */}
-        {/*"carousel-indicators" son los botones que se ven en la parrte inferior*/} 
-        <div className={`${styles['carousel-indicators']} carousel-indicators`} > 
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className='active'></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
-        </div>
-        
-        <div className="carousel-inner"> {/* "carousel-inner" ingresa las diapositivas */}
-          <div className="carousel-item active">
-            <header className={`${styles.imagenes} ${styles.imagen1}`}>
-              <div className={`${styles.contenedor}`}>
-                <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
-                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
-                  </a> 
-                  <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
-                  </nav>
-                </div> {/* .barra */}
-              </div> {/* .contenedor */}
-              <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`}>Lengua de Suegra</h2>
-                  <p className={`${styles.p}`}>Lengua de Suegra</p>
-              </div>
-            </header>
-          </div> {/* Primer diapositiva .carousel-item .active */}
-
-          <div className="carousel-item">
-            <header className={`${styles.imagenes} ${styles.imagen2}`}>
-              <div className={`${styles.contenedor}`}>
-                <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
-                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
-                  </a> 
-                  <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
-                  </nav>
-                </div> {/* .barra */}
-              </div> {/* .contenedor */}
-              <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`}>Coral Bells</h2>
-                  <p className={`${styles.p}`}>Coral Bells</p>
-              </div>
-            </header>
-          </div> {/* Segunda diapositiva .carousel-item */}
-
-          <div className="carousel-item">
-            <header className={`${styles.imagenes} ${styles.imagen3}`}>
-              <div className={`${styles.contenedor}`}>
-                <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
-                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
-                  </a> 
-                  <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
-                  </nav>
-                </div> {/* .barra */}
-              </div> {/* .contenedor */}
-              <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`}>Hiedra del Diablo</h2>
-                  <p className={`${styles.p}`}>Hiedra del Diablo</p>
-              </div>
-            </header>
-          </div> {/* Tercer diapositiva .carousel-item */}
-
-          <div className="carousel-item">
-            <header className={`${styles.imagenes} ${styles.imagen4}`}>
-              <div className={`${styles.contenedor}`}>
-                <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
-                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
-                  </a> 
-                  <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
-                  </nav>
-                </div> {/* .barra */}
-              </div> {/* .contenedor */}
-              <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`}>Palma de Madagscar</h2>
-                  <p className={`${styles.p}`}>Palma de Madagascar</p>
-              </div>
-            </header>
-          </div> {/* Cuarta diapositiva .carousel-item */}
-
-          <div className="carousel-item">
-            <header className={`${styles.imagenes} ${styles.imagen5}`}>
-              <div className={`${styles.contenedor}`}>
-                <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
-                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
-                  </a> 
-                  <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace}`}>Contacto</a>
-                  </nav>
-                </div> {/* .barra */}
-              </div> {/* .contenedor */}
-              <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`}>Planta de Hierro</h2>
-                  <p className={`${styles.p}`}>Planta de Hierro</p>
-              </div>
-            </header>
-          </div> {/* Quinta diapositiva .carousel-item .active */}
-
-          <div className="carousel-item">
-            <header className={`${styles.imagenes} ${styles.imagen6}`}>
-              <div className={`${styles.contenedor}`}>
-                <div className={`${styles.barra}`}>
-                  <a className={`${styles.logo} ${styles.a}`} href='/'> 
-                    <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
-                  </a> 
-                  <nav className={`${styles.navegacion}`}>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
-                    <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
-                  </nav>
-                </div> {/* .barra */}
-              </div> {/* .contenedor */}
-              <div className={`${styles.header__texto}`}>
-                  <h2 className={`${styles.h2}`}>Verde para Siempre</h2>
-                  <p className={`${styles.p}`}>Verde para Siempre</p>
-              </div>
-            </header>
-          </div> {/* Sexta diapositiva .carousel-item .active */}
-        </div> {/* .carousel-inner */}
-        <button className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon"></span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span className="carousel-control-next-icon"></span>
-        </button>
-      </div> {/* /Aqui se termina el carrusel .carousel y .slide/ */}
+      <div>
+        <Carrusel/>
+      </div>
 
       <div className={`${styles.contenedor} ${styles.contenido__principal} `}>
-        
           <article className={`${styles.entrada}`}>
               <div className={`${styles.margen}`}>
                 <img className={`${styles.imagen}`} src="/img/ImagenX.jpg" alt='Imagenx' />
               </div>
+              <div class="entrada__contenido" >
+                  <p>
+                      Nullam at condimentum ante, sit amet imperdiet lacus. 
+                      Nulla ac maximus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                      Mauris sodales ultrices nunc et accumsan. Donec diam mi, laoreet nec ligula quis, tristique fermentum ipsum.
+                  </p>
+                  <a href="/productos" className={`${styles.boton} ${styles.boton__primario}`}>Productos</a>
+              </div>
           </article>
 
           <article className={`${styles.entrada}`}>
               <div className={`${styles.margen}`}>
                 <img className={`${styles.imagen}`} src="/img/ImagenX.jpg" alt='Imagenx'/>
               </div>
+              <div class="entrada__contenido" >
+                  <p>
+                      Nullam at condimentum ante, sit amet imperdiet lacus. 
+                      Nulla ac maximus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                      Mauris sodales ultrices nunc et accumsan. Donec diam mi, laoreet nec ligula quis, tristique fermentum ipsum.
+                  </p>
+                  <a href="/productos" className={`${styles.boton} ${styles.boton__primario}`}>Productos</a>
+              </div>
           </article>
 
           <article className={`${styles.entrada} ${styles.grid3}`}>
-              <div className={`${styles.margen} `} >
+              <div className={`${styles.margen}`} >
                 <img className={`${styles.imagen}`} src="/img/ImagenX.jpg" alt='Imagenx'/>
+              </div>
+              <div class="entrada__contenido" >
+                  <p>
+                      Nullam at condimentum ante, sit amet imperdiet lacus. 
+                      Nulla ac maximus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                      Mauris sodales ultrices nunc et accumsan. Donec diam mi, laoreet nec ligula quis, tristique fermentum ipsum.
+                  </p>
+                  <a href="/productos" className={`${styles.boton} ${styles.boton__primario}`}>Productos</a>
               </div>
           </article>
        
@@ -199,16 +69,37 @@ export default function Home() {
                   <h1 className={`${styles.logo__nombre} ${styles.centrar__texto} ${styles.h1}`}>Titulo</h1>
               </a>
               <nav className={`${styles.navegacion}`}>
-                  <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
-                  <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
-                  <a href='#' className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a> 
+                  <a href='/nosotros' className={`${styles.navegacion__enlace} ${styles.a}`}>Nosotros</a>
+                    <div className={`${styles.centrar__icono}`}>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-xd" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M6 8l4 8" />
+                        <path d="M6 16l4 -8" />
+                        <path d="M14 8v8h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-2z" />
+                      </svg>
+                    </div>
+                  <a href='/productos' className={`${styles.navegacion__enlace} ${styles.a}`}>Productos</a>
+                    <div className={`${styles.centrar__icono}`}>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plant" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 15h10v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-4z" />
+                        <path d="M12 9a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
+                        <path d="M12 11a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
+                        <path d="M12 15l0 -6" />
+                      </svg>  
+                    </div>
+                  <a href="/contacto" className={`${styles.navegacion__enlace} ${styles.a}`}>Contacto</a>
+                    <div className={`${styles.centrar__icono}`}>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                          <path d="M3 7l9 6l9 -6" />
+                      </svg> 
+                    </div>   
               </nav>
           </div>
         </div>
       </footer>
-     
-      
-      
     </>
   )
 }
