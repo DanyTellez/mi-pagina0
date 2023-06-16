@@ -20,7 +20,7 @@ const clasesImagenes = [styles.imagen1, styles.imagen2, styles.imagen3, styles.i
 
 export default function Carrusel() {
   return (
-    <>
+  
       <div id="demo" className={`${styles.body} carousel slide`} data-bs-ride="carousel">
         {/* Cada uno de los botones representa cada una de 
         las imagenes como si fuera en una lista empieza en 0 */}
@@ -36,7 +36,7 @@ export default function Carrusel() {
         <div className="carousel-inner">
         {/* "carousel-inner" ingresa las diapositivas */}
         {Array.from(Array(6).keys()).map((index) => (
-            <div className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
               <header className={`${styles.imagenes} ${clasesImagenes[index]}`}>
                 <div className={`${styles.contenedor}`}>
                   <div className={`${styles.barra}`}>
@@ -64,7 +64,6 @@ export default function Carrusel() {
         <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
             <span className="carousel-control-next-icon"></span>
         </button>
-      </div> {/* /Aqui se termina el carrusel .carousel y .slide/ */}
-      </>
+      </div> /* /Aqui se termina el carrusel .carousel y .slide/ */   
   )
 }

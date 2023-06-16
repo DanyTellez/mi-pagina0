@@ -183,6 +183,39 @@ background-color: bisque;
 .centrar__icono {
     text-align: center;
 }
+
+/* Formulario */
+@media (min-width: 768px) {
+    .formulario{
+    background-color: beige;
+    margin: -5rem auto 0 auto;
+    width: 55%;
+    padding: 5rem;
+    
+    }  
+    
+}
+
+.formulario{
+    padding-top: 5rem;
+}
+.campo {
+    margin-bottom: 2rem;
+    
+    margin-right: 0rem;
+    font-size: 1.5rem;
+}
+
+.input-group-lg>.btn, .input-group-lg>.form-control, .input-group-lg>.form-select, .input-group-lg>.input-group-text {
+    padding: .6rem 1rem;
+    font-size: 1.6rem;
+}
+/* Contenedor */
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
   
   
 
