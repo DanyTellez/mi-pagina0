@@ -36,7 +36,7 @@ export default function Carrusel() {
         <div className="carousel-inner">
         {/* "carousel-inner" ingresa las diapositivas */}
         {Array.from(Array(6).keys()).map((index) => (
-            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval="2000">
               <header className={`${styles.imagenes} ${clasesImagenes[index]}`}>
                 <div className={`${styles.contenedor}`}>
                   <div className={`${styles.barra}`}>
