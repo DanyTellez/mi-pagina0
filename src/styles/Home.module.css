@@ -187,8 +187,8 @@ background-color: bisque;
 /* Formulario */
 @media (min-width: 768px) {
     .formulario{
-    background-color: #4c821d;
-    /* background-color: rgb(248, 249, 250); */
+    /* background-color: #4c821d; */
+    background-color: rgb(248, 249, 250);
     margin: -5rem auto 0 auto;
     width: 65%;
     padding: 5rem;

@@ -31,11 +31,10 @@
   }
 
   .btn-group-lg>.btn, .btn-lg {
-    --bs-btn-padding-y: 0.5rem;
-    --bs-btn-padding-x: 1rem;
-    --bs-btn-font-size: 2rem;
-    gap: 2rem;
-    --bs-btn-border-radius: var(--bs-border-radius-lg);
+    --bs-btn-padding-y: 0.8rem;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-font-size: 1.8rem;
+    
 }
 
   
