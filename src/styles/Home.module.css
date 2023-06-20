@@ -228,9 +228,11 @@ background-color: bisque;
     padding-bottom: 2rem;
 }
   
-  
+/* Boton */
 
-
+.boton__elementos {
+    font-size: 3rem;
+}
 
 
 
