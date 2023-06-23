@@ -14,20 +14,20 @@ export default function Home() {
         <h3 className={`${styles.centrar__texto} ${styles.h3} ${styles.contacto__color}`}>Contacto</h3> 
     
 
-    <form className={`${styles.formulario}  formulario1 needs-validation was-validated`} novalidate>
-      <div className={`${styles.campo} input-group mb-4 input-group-lg`} for="validationTooltipUsername">
-        <span className='input-group-text'  id="validationTooltipUsernamePrepend">Nombre</span>
+    <form className={`${styles.formulario} formulario1 was-validated`} novalidate>
+      <div className={`${styles.campo} input-group mb-4 input-group-lg`} htmlFor="validationTooltip01">
+        <span className='input-group-text'>Nombre</span>
         
-        <input  type='text' className='form-control has-validation' id='validationTooltipUsername' aria-describedby="validationTooltipUsernamePrepend" placeholder='Nombre Completo' required></input>
-        <div className='invalid-tooltip'>
+        <input  type='text' className='form-control' id='validationTooltip01' placeholder='Nombre Completo' required></input>
+        {/* <div className='valid-tooltip'>
           {"Es correcto"}
-        </div>
+        </div> */}
         
       </div>
 
-      <div className={`${styles.campo} input-group mb-4 input-group-lg`} >
+      <div className={`${styles.campo} input-group mb-4 input-group-lg`} for="validationTooltip02">
         <span className='input-group-text'>Correo</span>
-        <input type='text' className='form-control' id='email' placeholder='Introduzca su correo electrónico'></input>
+        <input type='email' className='form-control' id='email' htmlFor="validationTooltip02" placeholder='Introduzca su correo electrónico' required></input>
       </div>
 
       <div className={`${styles.campo} form-floating`}>
