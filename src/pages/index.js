@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Carrusel from './carrusel'
 import Encabezado from './encabezado'
+import React from 'react';
+
 
 export default function Home() {
   return (
@@ -53,7 +55,7 @@ export default function Home() {
                   <p>
                       Nullam at condimentum ante, sit amet imperdiet lacus. 
                       Nulla ac maximus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                      Mauris sodales ultrices nunc et accumsan. Donec diam mi, laoreet nec ligula quis, tristique fermentum ipsum.
+                      Mauris sodales ultrices nunc et accumsan. Donec diam mi, laoreet nec ligula quis, tristique fermen<i className="fas fa-home"></i>tum ipsum.
                   </p>
                   <a href="/productos" className={`${styles.boton} ${styles.boton__primario}`}>Productos</a>
               </div>

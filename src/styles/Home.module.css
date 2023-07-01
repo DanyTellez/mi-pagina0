@@ -1,3 +1,4 @@
+
 .body {
     font-size: 1.6rem;
     line-height: 2;
@@ -182,6 +183,8 @@ background-color: bisque;
 /* Centrar icono */
 .centrar__icono {
     text-align: center;
+    color: white;
+
 }
 
 /* Formulario */
