@@ -17,11 +17,11 @@ export default function Home() {
       </Head>
       
       <Carrusel/>
-      
-      <div className={`${styles.contenedor} ${styles.contenido__principal} `}>
-          <article className={`${styles.entrada}`}>
+    <div className='container'>
+      <div className='row row-cols-sm-1 row-cols-md-2 row-cols-xl-3'>
+          <article className={`${styles.entrada} col-12`}>
               <div className={`${styles.margen}`}>
-                <img className={`${styles.imagen}`} src="/img/ImagenX.jpg" alt='Imagenx' />
+                <img className='container' src="/img/ImagenX.jpg" alt='Imagenx' height={450} width={600} />
               </div>
               <div className={`${styles.entrada__contenido}`}>
                   <p>
@@ -33,9 +33,9 @@ export default function Home() {
               </div>
           </article>
 
-          <article className={`${styles.entrada}`}>
+          <article className={`${styles.entrada} col-12`}>
               <div className={`${styles.margen}`}>
-                <img className={`${styles.imagen}`} src="/img/ImagenX.jpg" alt='Imagenx'/>
+                <img className='container' src="/img/ImagenX.jpg" alt='Imagenx' height={450} width={600}/>
               </div>
               <div className={`${styles.entrada__contenido}`}>
                   <p>
@@ -47,9 +47,9 @@ export default function Home() {
               </div>
           </article>
 
-          <article className={`${styles.entrada} ${styles.grid3}`}>
+          <article className={`${styles.entrada} col-12`}>
               <div className={`${styles.margen}`} >
-                <img className={`${styles.imagen}`} src="/img/ImagenX.jpg" alt='Imagenx'/>
+                <img className='container' src="/img/ImagenX.jpg" alt='Imagenx' height={450} width={600}/>
               </div>
               <div className={`${styles.entrada__contenido}`}>
                   <p>
@@ -60,7 +60,8 @@ export default function Home() {
                   <a href="/productos" className={`${styles.boton} ${styles.boton__primario}`}>Productos</a>
               </div>
           </article>
-      </div>
+      </div>  
+    </div>
 
       <Encabezado/>
     </>
