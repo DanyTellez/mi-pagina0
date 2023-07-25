@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css'
 import Carrusel from './carrusel'
 import Encabezado from './encabezado'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,28 +16,28 @@ export default function Home() {
     
 
     <form className={`${styles.formulario} formulario1 was-validated`} novalidate>
-      <div className={`${styles.campo} input-group mb-4 input-group-lg`} htmlFor="validationTooltip01">
+      <div className={`${styles.campo} input-group mb-4 input-group-lg`} htmlFor="nombre">
         <span className='input-group-text'>Nombre</span>
         
-        <input  type='text' className='form-control' id='validationTooltip01' placeholder='Nombre Completo' required></input>
+        <input  type='text' className='form-control' id='nombre' placeholder='Nombre Completo' required></input>
         {/* <div className='valid-tooltip'>
           {"Es correcto"}
         </div> */}
         
       </div>
 
-      <div className={`${styles.campo} input-group mb-4 input-group-lg`} for="validationTooltip02">
+      <div className={`${styles.campo} input-group mb-4 input-group-lg`} for="correo">
         <span className='input-group-text'>Correo</span>
-        <input type='email' className='form-control' id='email' htmlFor="validationTooltip02" placeholder='Introduzca su correo electrónico' required></input>
+        <input type='email' className='form-control' id='email' htmlFor="correo" placeholder='Introduzca su correo electrónico' required></input>
       </div>
 
       <div className={`${styles.campo} form-floating`}>
-        <textarea className='form-control' placeholder="Leave a comment here" id='floatingTextarea2' style={{height: '19rem'}}></textarea>
+        <textarea className='form-control' placeholder="Leave a comment here" id='floatingTextarea' style={{height: '19rem'}}></textarea>
         <label htmlFor="floatingTextarea">Comentarios</label> 
       </div>
       
       <div className={`${styles.boton__elementos} d-grid d-md-block d-md-flex justify-content-md-end`}>
-        <button type="submit" className="btn btn-success btn-lg">
+        <button type="submit" className="btn btn-primary btn-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-arrow-down-right-square " viewBox="0 0 16 16">
                 <path fillRule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 3.146a.5.5 0 1 0-.708.708L9.243 9.95H6.475a.5.5 0 1 0 0 1h3.975a.5.5 0 0 0 .5-.5V6.475a.5.5 0 1 0-1 0v2.768L5.854 5.146z"></path>
                 </svg>

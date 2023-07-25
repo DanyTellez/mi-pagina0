@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Carrusel from './carrusel'
 import Encabezado from './encabezado'
+
 import React from 'react';
 
 
@@ -21,7 +22,7 @@ export default function Home() {
       <div className='row row-cols-sm-1 row-cols-md-2 row-cols-xl-3'>
           <article className={`${styles.entrada} col-12`}>
               <div className={`${styles.margen}`}>
-                <img className='container' src="/img/ImagenX.jpg" alt='Imagenx' height={450} width={600} />
+                <img className='container' src="/img/ImagenX.jpg" alt='Imagenx' />
               </div>
               <div className={`${styles.entrada__contenido}`}>
                   <p>
@@ -35,7 +36,7 @@ export default function Home() {
 
           <article className={`${styles.entrada} col-12`}>
               <div className={`${styles.margen}`}>
-                <img className='container' src="/img/ImagenX.jpg" alt='Imagenx' height={450} width={600}/>
+                <img className='container' src="/img/ImagenX.jpg" alt='Imagenx'/>
               </div>
               <div className={`${styles.entrada__contenido}`}>
                   <p>
@@ -49,7 +50,7 @@ export default function Home() {
 
           <article className={`${styles.entrada} col-12`}>
               <div className={`${styles.margen}`} >
-                <img className='container' src="/img/ImagenX.jpg" alt='Imagenx' height={450} width={600}/>
+                <img className='container' src="/img/ImagenX.jpg" alt='Imagenx'/>
               </div>
               <div className={`${styles.entrada__contenido}`}>
                   <p>
