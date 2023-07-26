@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Carrusel from './carrusel';
+import styles from '@/styles/Home.module.scss'
+import Carrusel from './carrusel'
 import Encabezado from './encabezado'
 
 const inter = Inter({ subsets: ['latin'] })

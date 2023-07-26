@@ -1,18 +1,21 @@
 
-$primary: #00a6d9;
+
+$primary: #00d96d;
 
 $theme-colors: (
   "primary": $primary,
   
 );
 
+
+
+@import "~bootstrap/dist/css/bootstrap";
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/variables-dark";
 
-
-
-@import "bootstrap/scss/maps";
+// @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 // @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/root";
@@ -20,10 +23,10 @@ $theme-colors: (
 
 // @import "bootstrap/scss/type";
 // @import "bootstrap/scss/images";
-@import "bootstrap/scss/containers";
-@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/containers";
+// @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
-@import "bootstrap/scss/forms";
+// @import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 // @import "bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
@@ -43,7 +46,7 @@ $theme-colors: (
 // @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
-@import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
 // @import "bootstrap/scss/offcanvas"; // Requires transitions
 // @import "bootstrap/scss/placeholders";
