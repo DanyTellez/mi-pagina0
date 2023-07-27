@@ -1,4 +1,4 @@
-
+$separacion:5rem;
 .body {
     font-size: 1.6rem;
     line-height: 2;
@@ -163,6 +163,8 @@ background-color: bisque;
     background-color: rgb(7, 82, 7);
     padding-bottom: 3rem;
     margin-top: 5rem;
+    margin-bottom: calc($separacion - 5rem);
+    
 }
 
 .a {

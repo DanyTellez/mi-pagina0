@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Encabezado() {
     return (
-        <footer className={`${styles.footer}`}>
+        <footer className={`${styles.footer} ${styles.seccion}`}>
         <div className={`${styles.contenedor}`}>
           <div className={`${styles.barra2}`}>
               <a className={`${styles.logo} ${styles.a}`}  href='/'>
