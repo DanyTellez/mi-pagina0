@@ -1,5 +1,5 @@
-import '@/styles/globals.scss'
-import '@/styles/bootstrap.scss'
+import '@/styles/globals.scss';
+
 
 
 
