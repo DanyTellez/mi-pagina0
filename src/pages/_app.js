@@ -1,4 +1,8 @@
 import '@/styles/globals.scss';
+import '@/styles/main.scss';
+
+
+
 
 
 
