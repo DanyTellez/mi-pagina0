@@ -16,7 +16,7 @@ $theme-colors: (
 $separacion: 5rem;
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
-// @import "bootstrap/scss/utilities";
+@import "bootstrap/scss/utilities";
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
 

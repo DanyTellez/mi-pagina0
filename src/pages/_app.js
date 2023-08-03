@@ -1,5 +1,8 @@
-import '@/styles/globals.scss';
 import '@/styles/main.scss';
+import '@/styles/globals.scss';
+import '@/styles/Home.module.scss';
+
+
 
 
 
