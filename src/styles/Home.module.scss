@@ -1,4 +1,5 @@
 @import 'footer';
+@import 'formulario';
 
 
 .body {
@@ -31,6 +32,13 @@
 }
 .imagen6 {
     background-image: url(/img/VerdeparaSiempre.png);
+}
+.bg {
+    background-image: url(/img/PlantasPanel.png);
+    height: 94rem; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .centrar__texto {
     text-align: center;
@@ -160,14 +168,10 @@ background-color: bisque;
     }
 }
 /* Footer */
-.footer {
-    background: rgb(178,212,148);
-    background: linear-gradient(0deg, rgba(178,212,148,1) 0%, rgba(29,104,45,1) 81%);
-    padding-bottom: 3rem;
-    margin-top: 5rem;
-    margin-bottom: calc($separacion - 5rem);
-    
-}
+
+    // background: rgb(178,212,148);
+    // background: linear-gradient(0deg, rgba(178,212,148,1) 0%, rgba(29,104,45,1) 81%);
+   
 
 .a {
     text-decoration: none;

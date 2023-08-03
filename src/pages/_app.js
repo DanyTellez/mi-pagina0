@@ -1,6 +1,7 @@
-import '@/styles/main.scss';
+import 'bootstrap/dist/css/bootstrap.css';
 import '@/styles/globals.scss';
 import '@/styles/Home.module.scss';
+
 
 
 

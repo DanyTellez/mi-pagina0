@@ -1,12 +1,11 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/variables-dark";
+$colorFooter:rgb(178,212,148);
+$colorOpaco:linear-gradient(0deg, rgba(178,212,148,1) 0%, rgba(29,104,45,1) 81%);
 $separacion: 5rem;
-// /* Footer */
-// .footer {
-//   background-color: $pink-700;
-//   padding-bottom: 3rem;
-//   margin-top: 5rem;
-//   margin-bottom: calc($separacion - 5rem);
-  
-// }
+/* Footer */
+.footer {
+  // background-color: $pink-700;
+  background: $colorFooter;
+  background: $colorOpaco;
+  padding-bottom: 3rem;
+}
+
