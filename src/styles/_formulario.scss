@@ -2,11 +2,18 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/variables-dark";
 
-
-
 .colorRegistro {
-    color: $red-600;
-    
+    color: $white;  
+}
+
+.border1 {
+    background-color: $gray-700;
+    background-color: $green-700;
+}
+
+.bodyRegistro {
+    background-color: $blue-800;
+    background-color: $white;
 }
 
 

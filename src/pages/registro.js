@@ -31,7 +31,7 @@ export default function Home() {
                 </div>    
                 <div className={`text-center h1 ${styles.colorRegistro}`}>Registra tus datos:</div>
                     <main className='d-flex justify-content-center'>
-                        <form className='col-7'>
+                        <form className='col-12'>
                             <div>
                                 <label htmlFor='nombre' className='form-label'></label>
                                 <input type='text' className={claseInput} placeholder='Nombre*' id='nombre'></input>
